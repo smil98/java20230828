@@ -13,7 +13,7 @@ class MyClass06 {
     }
 }
 class MySubClass061 extends MyClass06 {
-    @Override
+    @Override //annotation: 컴파일시 재정의한 메소드인지 검증함
     public void method10() {
         System.out.println("서브 클래스의 메소드");
     }
