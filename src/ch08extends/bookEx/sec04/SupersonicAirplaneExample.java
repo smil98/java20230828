@@ -1,5 +1,5 @@
 package ch08extends.bookEx.sec04;
-
+//pg.297~8
 public class SupersonicAirplaneExample {
     public static void main(String[] args) {
         SupersonicAirplane sa = new SupersonicAirplane();
