@@ -9,7 +9,8 @@ public class C02extends {
 }
 
 class MySubClass021 extends MyClass02 {
-    
+    //MyClass02 - super, parent Class
+    //MySubClass021 - sub, child Class
 }
 
 class MyClass02 {
