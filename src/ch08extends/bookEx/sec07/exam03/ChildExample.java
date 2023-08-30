@@ -7,6 +7,7 @@ public class ChildExample {
         parent.field1 = "data1";
         parent.method1();
         parent.method2();
+        //method3() error
 
         Child child = (Child) parent;
         child.field2 = "data2";
