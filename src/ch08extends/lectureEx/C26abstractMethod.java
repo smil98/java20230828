@@ -2,7 +2,14 @@ package ch08extends.lectureEx;
 
 public class C26abstractMethod {
     public static void main(String[] args) {
+        Dog26 d1 = new Dog26();
+        d1.breathe();
 
+        Animal26 a1 = d1;
+        a1.breathe();
+
+        Fish26 f1 = new Fish26();
+        f1.breathe();
     }
 }
 
