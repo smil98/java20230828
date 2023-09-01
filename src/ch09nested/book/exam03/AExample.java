@@ -10,3 +10,5 @@ public class AExample {
         A.B.method2();
     }
 }
+
+

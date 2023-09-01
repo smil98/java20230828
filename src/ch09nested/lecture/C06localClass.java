@@ -16,5 +16,7 @@ public class C06localClass {
         class LocalClass {
 
         }
+
+        LocalClass o1 = new LocalClass();
     }
 }
