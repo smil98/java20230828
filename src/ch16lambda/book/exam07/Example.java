@@ -19,6 +19,7 @@ public class Example {
                 return y;
             } else return x;
             //(x < y) ? y : x
+            //Math.max(x,y);
         });
         System.out.println("max = " + max);
 
@@ -29,7 +30,10 @@ public class Example {
                 return y;
             } else return x;
             //(x < y) ? x : y
+            //Math.min(x,y);
         });
+
+//        int min = maxOrMin(Math::min);
         System.out.println("min = " + min);
     }
 }

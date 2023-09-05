@@ -8,6 +8,12 @@ public class C09methodReference {
 
         MyInterface09 o3 = (x,y) -> x.someMethod(y);
         MyInterface09 o4 = MyClass09::someMethod; //can shorten line 9 to this form
+        MyInterface09 o5 = new MyInterface09() {
+            @Override
+            public void method(MyClass09 myClass09, int a) {
+
+            }
+        };
     }
 }
 
