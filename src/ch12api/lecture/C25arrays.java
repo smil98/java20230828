@@ -4,31 +4,33 @@ import java.util.Arrays;
 
 public class C25arrays {
     public static void main(String[] args) {
-        //Arrays: methods that deal with array
-        //equals: whether arrays are equivalent
-        //fill : fill array with certain value
-        //sort : sorting arrays
-        //binarySearch : search index for certain element
-        //toString : convert to string
+        Student[] arr22 = {
+                new Student("이강인"),
+                new Student("손흥민"),
+                new Student("김민재")
+        };
 
-        int[] arr1 = new int[5];
-        System.out.println(arr1);
-        System.out.println(Arrays.toString(arr1));
-        Arrays.fill(arr1, 10);
-        System.out.println(Arrays.toString(arr1));
+        Arrays.sort(arr22, (x, y) -> x.getName().compareTo(y.getName())); //never specified comparing method;
+        //classcastingexception
+        System.out.println(Arrays.toString(arr22));
+    }
+}
 
-        int[] arr2 = {3, -2, 10, 0, -1};
-        System.out.println(Arrays.toString(arr2));
-        Arrays.sort(arr2);
-        System.out.println(Arrays.toString(arr2));
+class Student {
+    private String name;
 
-        int[] arr3 = {3, 4, 5};
-        int[] arr4 = {3, 4, 5};
-        int[] arr5 = {4, 3, 5};
-        System.out.println(Arrays.equals(arr3, arr4));
-        System.out.println(Arrays.equals(arr4, arr5)); //if order is different false
+    public Student(String name) {
+        this.name = name;
+    }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 
-
+    public String getName() {
+        return name;
     }
 }
