@@ -2,16 +2,10 @@ package ch12api.lecture;
 
 public class C22wrapper {
     public static void main(String[] args) {
-        Integer i = 3000;
-        Integer j = 3000;
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
 
-        int k = 30;
-        int l = 30;
-
-        System.out.println(k == l);
-        System.out.println(i == j); //compares reference address thus false;
-
-        System.out.println(i.equals(j));
-
+        System.out.println("Long.MAX_VALUE =" + Long.MAX_VALUE);
+        System.out.println("Long.MIN_VALUE =" + Long.MIN_VALUE);
     }
 }

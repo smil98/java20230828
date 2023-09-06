@@ -2,34 +2,16 @@ package ch12api.lecture;
 
 public class C21wrapper {
     public static void main(String[] args) {
-        int i = 3;
-        Integer j = Integer.valueOf(i); //old version
-        Object k = j;
+        Integer i = 3000;
+        Integer j = 3000;
 
-        int l = 5;
-        Integer m = l;
-        Object n = m;
+        int k = 30;
+        int l = 30;
 
-        Object o = 7;
+        System.out.println(k == l);
+        System.out.println(i == j); //compares reference address thus false;
 
-
-        Integer q = (Integer) o; //caution!!
-        int r = q;
-
-        int s = 30; //4 byte
-        long t = s; // 8 byte
-        //conversion no prob
-
-        Integer u = 300;
-//        Long v = u;
-        //error bc polymorphism
-
-        float w = 3.14f;
-        double x = w;
-
-        Float y = 3.14f;
-//        Double z = y;
-        //error bc polymorphism
+        System.out.println(i.equals(j));
 
     }
 }
