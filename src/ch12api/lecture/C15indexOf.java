@@ -22,5 +22,6 @@ public class C15indexOf {
         }
 
         System.out.println(count);
+
     }
 }
