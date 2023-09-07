@@ -30,7 +30,9 @@ public class C06wildCard {
     }
 }
 
-class Animal {}
+class Animal {
+    public void animalMethod() {};
+}
 
 class Dog extends Animal {}
 
