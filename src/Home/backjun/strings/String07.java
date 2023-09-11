@@ -1,4 +1,4 @@
-package Home.backjun;
+package Home.backjun.strings;
 import java.util.Scanner;
 
 public class String07 {
