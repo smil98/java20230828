@@ -2,6 +2,7 @@ package ch17stream.book.exam03;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class Example {
     public static void main(String[] args) {
@@ -33,5 +34,14 @@ public class Example {
                 .map(x->x.getAge())
                 .reduce(Integer.MAX_VALUE, Math::min);
         System.out.println(minAge);
+        System.out.println();
+
+        //avg age
+        Double avgAge = list.stream()
+                .mapToDouble(Member::getAge)
+                .average()
+                .getAsDouble();
+        System.out.println(avgAge);
+
     }
 }
