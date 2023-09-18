@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 
 public class Example {
     public static void main(String[] args) throws Exception {
-        String filePath = "src/ch18iostream/book/exam10/Example.java";
+        String filePath = "src/ch18iostream/book/exam10/Question10.java";
         FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);
         int rowNumber = 0;
