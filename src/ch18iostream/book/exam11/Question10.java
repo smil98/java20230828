@@ -29,7 +29,6 @@ public class Question10 {
                         parentDir.mkdirs();
                     }
                 }
-
                 try (InputStream is = new FileInputStream(origFile);
                      OutputStream os = new FileOutputStream(copyFile)) {
                     try (BufferedInputStream isw = new BufferedInputStream(is);
@@ -40,7 +39,7 @@ public class Question10 {
                             osw.write(data, 0, len);
                         }
                         osw.flush();
-                        System.out.println("복사가 성공적으로 되었습니다.");
+                        System.out.println("복사에 성공했습니다.");
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
