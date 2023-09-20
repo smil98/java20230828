@@ -8,7 +8,7 @@ import java.net.Socket;
 public class C03client {
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("172.30.1.23", 3000);//recieves the string this ip address has sent
+            Socket socket = new Socket("172.30.1.xx", 3000);//recieves the string this ip address has sent
             InputStream is = socket.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader br = new BufferedReader(isr);

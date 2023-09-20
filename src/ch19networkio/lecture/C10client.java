@@ -8,7 +8,7 @@ public class C10client {
         // 172.30.1.81 7000
 
         try {
-            Socket socket = new Socket("172.30.1.81", 7000);
+            Socket socket = new Socket("172.30.1.xx", 7000);
             Writer writer = new OutputStreamWriter(socket.getOutputStream());
             BufferedWriter bw = new BufferedWriter(writer);
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

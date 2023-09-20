@@ -10,7 +10,7 @@ public class C05client {
     public static void main(String[] args) {
 
         try {
-            Socket socket = new Socket("172.30.1.43", 3000);
+            Socket socket = new Socket("172.30.1.xx", 3000);
             String path = "C:/Temp/test.jpg";
             FileInputStream fi = new FileInputStream(path);
             BufferedInputStream bis = new BufferedInputStream(fi);

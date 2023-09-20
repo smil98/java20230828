@@ -11,7 +11,7 @@ public class C07client {
         //server -> client sending mail
 
         try {
-            Socket socket = new Socket("172.30.1.81", 5000);
+            Socket socket = new Socket("172.30.1.xx", 5000);
             InputStream is = socket.getInputStream();
             BufferedInputStream bis = new BufferedInputStream(is);
             String path = "C:/Temp/test-server.jpg";
