@@ -1,15 +1,13 @@
-package ch05reference;
+package ch05reference.lecture;
 
-public class C07reference {
+public class C08array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int[] a = {3,4,5};
+		int[] b = {3,4,5};
+		int[] c = a;
 		
-		String a = "java";
-		String b = "spring";
-		String c = a;
-		
-		//참조값 보기
 		int code1 = System.identityHashCode(a);
 		int code2 = System.identityHashCode(b);
 		int code3 = System.identityHashCode(c);

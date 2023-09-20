@@ -1,4 +1,4 @@
-package ch05reference;
+package ch05reference.lecture;
 
 public class C01primitive {
 
